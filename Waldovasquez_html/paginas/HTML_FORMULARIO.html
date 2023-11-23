@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Reserva</title>
+</head>
+<body>
+
+  <form action="envio.php" method="GET">
+    <fieldset>
+      <legend>Datos de Reserva</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="fecha_reserva">Fecha de la reserva:</label>
+      <input type="date" id="fecha_reserva" name="fecha_reserva" required>
+
+      <label for="talla">Talla:</label>
+      <select id="talla" name="talla">
+        <option value="S">Pequeña</option>
+        <option value="M">Mediana</option>
+        <option value="L">Grande</option>
+        <option value="XL">Extra Grande</option>
+      </select>
+
+      <label>Género:</label>
+      <label for="corbata">Corbata</label>
+      <input type="radio" id="corbata" name="cuello" value="corbata" required>
+
+      <label for="pajarita">Pajarita</label>
+      <input type="radio" id="pajarita" name="cuello" value="pajarita" required>
+
+      <label>Accesorios:</label>
+      <label for="chaleco">Chaleco</label>
+      <input type="checkbox" id="chaleco" name="accesorios[]" value="chaleco">
+
+      <label for="panuelo">Pañuelo</label>
+      <input type="checkbox" id="panuelo" name="accesorios[]" value="panuelo">
+
+      <label for="gemelos">Gemelos</label>
+      <input type="checkbox" id="gemelos" name="accesorios[]" value="gemelos">
+
+      <label for="fecha_inicio">Fecha de inicio de alquiler:</label>
+      <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+
+      <label for="fecha_fin">Fecha de fin de alquiler:</label>
+      <input type="date" id="fecha_fin" name="fecha_fin" required>
+
+      <input type="submit" value="Enviar Reserva">
+    </fieldset>
+  </form>
+
+</body>
+</html>
